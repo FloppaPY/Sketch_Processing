@@ -1,0 +1,15 @@
+def setup():
+    size(1200,650)
+    background(20)
+    strokeWeight(1)
+    frameRate(10)
+def draw():
+    background(20)
+    fill(random(200,255))
+    stroke(random(200,255))
+    strokeWeight(random(1,5))
+    ellipse(random(0,1200),random(0,1200),2,2)
+    stroke(234,255,13)
+    fill(234,255,13)
+    strokeWeight(1)
+    ellipse(600,325,random(0,300),random(0,300))
