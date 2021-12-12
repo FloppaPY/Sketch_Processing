@@ -1,17 +1,11 @@
-bg=0
 def setup():
-    size(600,400)
+    size(500,400)
+    background(200)
     frameRate(10)
 def draw():
-    global bg
-    background(bg)
-    stroke(random(0,255),random(0,255),random(0,255))
-    line(random(0,600),random(0,400),20,30)
-    stroke(0)
-    ellipse(400,350,70,70)
-def mouseClicked():
-    global bg
-    xDif = 400 - mouseX
-    yDif = 350 - mouseY
-    strokeWeight(20)
-    fill(200,100,200)
+    background(0)
+    fill(100,50,223)
+    stroke(200)
+    quad(random(1,500),random(1,400),random(1,50),random(1,100),random(1,500),random(1,400),random(1,50),random(1,100))
+    ellipse(random(1,500),random(1,400),random(1,50),random(1,100))
+    
